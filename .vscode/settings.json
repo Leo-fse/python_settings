@@ -1,0 +1,68 @@
+{
+  // フォントをHackGen35 Console NFに設定
+  "editor.fontFamily": "'HackGen35 Console NF', Consolas, 'Courier New', monospace",
+  // ファイルを保存するときに、フォーマッタを使用してファイルを自動的にフォーマットする
+  "editor.formatOnSave": true,
+  // 保存時のフォーマットのモードを"file"に設定。つまり、ファイル全体をフォーマットします。
+  "editor.formatOnSaveMode": "file",
+
+  // VS CodeのデフォルトのフォーマッタとしてPrettierを使用
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[python]": {
+    // Pythonファイルのデフォルトフォーマッタを無効化する(null)
+    "editor.defaultFormatter": null,
+    // Pythonファイルを保存するときに、フォーマッタを使用してファイルを自動的にフォーマットする
+    "editor.formatOnSave": true
+  },
+  // Pythonインタープリタのパスを指定
+  "python.defaultInterpreterPath": ".\\venv\\Scripts\\python.exe",
+  // PythonのフォーマッティングプロバイダーとしてBlackを使用
+  "python.formatting.provider": "black",
+  // Pylintを無効化
+  "python.linting.pylintEnabled": false,
+  // Blackの設定。行の長さを最大100文字に設定
+  "python.formatting.blackArgs": ["--line-length=100"],
+  // Pythonのリンティングを有効化
+  "python.linting.enabled": true,
+  // Pythonのリンティングを保存時に有効化
+  "python.linting.lintOnSave": true,
+  // Flake8を有効化
+  "python.linting.flake8Enabled": true,
+  // Flake8の設定。行の長さを最大100文字に設定し、いくつかの警告を無視
+  "python.linting.flake8Args": [
+    "--max-line-length=100", // 最大の行の長さを100文字に設定します
+    "--ignore=E203,W503,W504" // 特定の警告を無視します:
+    // E203: ホワイトスペースが演算子の前後で一貫していない
+    // W503: 改行前の二項演算子
+    // W504: 改行後の二項演算子
+  ],
+  // Mypyを有効化
+  "python.linting.mypyEnabled": true,
+  // // ワークスペース全体のPythonの診断を有効化
+  "python.analysis.diagnosticMode": "workspace",
+  // Pylanceの型チェックモードを"basic"に設定
+  "python.analysis.typeCheckingMode": "basic",
+  // Mypyの設定。各種の型チェックを厳格に設定し、一部の警告を無視
+  // prettier-ignore
+  "python.linting.mypyArgs": [
+  "--follow-imports=silent",  // ファイルをインポートする際に再帰的に型チェックを行わず、
+                              // インポートされたファイル内の警告を表示しないようにします。
+  "--show-column-numbers",    // エラーが発生した具体的な行と列を表示します。
+  "--no-pretty",              // エラーメッセージをプレーンテキスト形式で表示します。
+  "--warn-return-any",        // 型がAnyである値を返す関数について警告を発します。
+  "--no-implicit-optional",   // 明示的にオプションでない限り、Noneを許可しないようにします。
+  "--disallow-untyped-calls", // 型が指定されていない関数を呼び出すと警告します。
+  "--disallow-untyped-defs",  // 関数が明示的な型注釈を持っていない場合に警告します。
+  "--ignore-missing-imports", // 型注釈がないサードパーティライブラリを使用していても警告を受けないようにします。
+],
+  // インラインサジェストを有効化
+  "editor.inlineSuggest.enabled": true,
+  // インポートを自動的に整理
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  // isortとblackを統合
+  "isort.args": ["--profile", "black"]
+}

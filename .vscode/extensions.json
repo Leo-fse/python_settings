@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "ms-ceintl.vscode-language-pack-ja",
+    "visualstudioexptteam.vscodeintellicode",
+    "visualstudioexptteam.intellicode-api-usage-examples",
+    "usernamehw.errorlens",
+    "esbenp.prettier-vscode",
+    "ms-python.python",
+    "ms-python.flake8",
+    "ms-python.vscode-pylance",
+    "ms-python.black-formatter",
+    "ms-python.isort",
+    "seatonjiang.gitmoji-vscode"
+  ]
+}
