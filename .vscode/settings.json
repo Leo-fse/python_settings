@@ -3,6 +3,8 @@
   "editor.fontFamily": "'HackGen35 Console NF', Consolas, 'Courier New', monospace",
   // colorThemeをGruvbox Glassに設定
   "workbench.colorTheme": "Gruvbox Glass",
+  // 透明度を設定
+  "glassit.alpha": 247,
   // エディターのタブプレビューを無効化
   "workbench.editor.enablePreview": false,
   // ターミナルのデフォルトの位置をエディターに設定
