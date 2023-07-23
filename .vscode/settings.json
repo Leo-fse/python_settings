@@ -59,10 +59,12 @@
 ],
   // インラインサジェストを有効化
   "editor.inlineSuggest.enabled": true,
-  // インポートを自動的に整理
+  // ファイルを保存するときに、isortを使用してインポートを自動的に並び替える
   "editor.codeActionsOnSave": {
     "source.organizeImports": true
   },
   // isortとblackを統合
-  "isort.args": ["--profile", "black"]
+  "isort.args": ["--profile", "black"],
+  // エディターのタブプレビューを無効化
+  "workbench.editor.enablePreview": false
 }
