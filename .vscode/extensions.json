@@ -10,6 +10,7 @@
     "ms-python.vscode-pylance",
     "ms-python.black-formatter",
     "ms-python.isort",
-    "seatonjiang.gitmoji-vscode"
+    "seatonjiang.gitmoji-vscode",
+    "mhutchie.git-graph"
   ]
 }
