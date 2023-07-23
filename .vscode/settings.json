@@ -1,6 +1,25 @@
 {
   // フォントをHackGen35 Console NFに設定
   "editor.fontFamily": "'HackGen35 Console NF', Consolas, 'Courier New', monospace",
+  // エディターのタブプレビューを無効化
+  "workbench.editor.enablePreview": false,
+  // ターミナルのデフォルトの位置をエディターに設定
+  "terminal.integrated.defaultLocation": "editor",
+  // ターミナルのデフォルトのシェルをPowerShellに設定
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  // https://ohmyposh.dev/docs/installation/prompt
+  // "terminal.integrated.profiles.windows": {
+  //   "PowerShell Prompt": {
+  //     "args": [
+  //       "-NoExit",
+  //       "-Command",
+  //       "oh-my-posh --init --shell pwsh --config ~/.config/powershell/agnoster.omp.json | Invoke-Expression"
+  //     ],
+  //     "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+  //     // "path": "C:\\Users\\tomon\\scoop\\apps\\pwsh\\7.3.6\\pwsh.exe"
+  //   }
+  // }
+
   // ファイルを保存するときに、フォーマッタを使用してファイルを自動的にフォーマットする
   "editor.formatOnSave": true,
   // 保存時のフォーマットのモードを"file"に設定。つまり、ファイル全体をフォーマットします。
@@ -64,7 +83,5 @@
     "source.organizeImports": true
   },
   // isortとblackを統合
-  "isort.args": ["--profile", "black"],
-  // エディターのタブプレビューを無効化
-  "workbench.editor.enablePreview": false
+  "isort.args": ["--profile", "black"]
 }
