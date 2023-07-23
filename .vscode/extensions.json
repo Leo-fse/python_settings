@@ -11,6 +11,7 @@
     "ms-python.black-formatter",
     "ms-python.isort",
     "seatonjiang.gitmoji-vscode",
-    "mhutchie.git-graph"
+    "mhutchie.git-graph",
+    "jackpaget.gruvbox-glass"
   ]
 }

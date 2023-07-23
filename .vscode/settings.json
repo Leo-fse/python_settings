@@ -1,6 +1,8 @@
 {
   // フォントをHackGen35 Console NFに設定
   "editor.fontFamily": "'HackGen35 Console NF', Consolas, 'Courier New', monospace",
+  // colorThemeをGruvbox Glassに設定
+  "workbench.colorTheme": "Gruvbox Glass",
   // エディターのタブプレビューを無効化
   "workbench.editor.enablePreview": false,
   // ターミナルのデフォルトの位置をエディターに設定
