@@ -50,12 +50,13 @@
   // Flake8を有効化
   "python.linting.flake8Enabled": true,
   // Flake8の設定。行の長さを最大100文字に設定し、いくつかの警告を無視
+  // prettier-ignore
   "python.linting.flake8Args": [
-    "--max-line-length=100", // 最大の行の長さを100文字に設定します
+    "--max-line-length=100",  // 最大の行の長さを100文字に設定します
     "--ignore=E203,W503,W504" // 特定の警告を無視します:
-    // E203: ホワイトスペースが演算子の前後で一貫していない
-    // W503: 改行前の二項演算子
-    // W504: 改行後の二項演算子
+                              // E203: ホワイトスペースが演算子の前後で一貫していない
+                              // W503: 改行前の二項演算子
+                              // W504: 改行後の二項演算子
   ],
   // Mypyを有効化
   "python.linting.mypyEnabled": true,
