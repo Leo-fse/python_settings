@@ -13,6 +13,8 @@
     "seatonjiang.gitmoji-vscode",
     "mhutchie.git-graph",
     "jackpaget.gruvbox-glass",
-    "s-nlf-fh.glassit"
+    "s-nlf-fh.glassit",
+    "pkief.material-icon-theme",
+    "christian-kohler.path-intellisense"
   ]
 }

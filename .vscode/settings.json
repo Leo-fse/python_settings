@@ -3,10 +3,16 @@
   "editor.fontFamily": "'HackGen35 Console NF', Consolas, 'Courier New', monospace",
   // colorThemeをGruvbox Glassに設定
   "workbench.colorTheme": "Gruvbox Glass",
+  // iconThemeをmaterial-icon-themeに設定
+  "workbench.iconTheme": "material-icon-theme",
   // 透明度を設定
   "glassit.alpha": 247,
   // エディターのタブプレビューを無効化
   "workbench.editor.enablePreview": false,
+
+  "typescript.suggest.paths": false,
+  "javascript.suggest.paths": false,
+
   // ターミナルのデフォルトの位置をエディターに設定
   "terminal.integrated.defaultLocation": "editor",
   // ターミナルのデフォルトのシェルをPowerShellに設定
@@ -88,5 +94,9 @@
     "source.organizeImports": true
   },
   // isortとblackを統合
-  "isort.args": ["--profile", "black"]
+  "isort.args": ["--profile", "black"],
+  "editor.guides.bracketPairs": "active",
+  "editor.guides.bracketPairsHorizontal": true,
+  "workbench.editor.showTabs": false,
+  "editor.linkedEditing": true
 }
