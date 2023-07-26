@@ -1,6 +1,7 @@
 black
 flake8
 mypy
+pytest
 
 pandas
 bokeh
