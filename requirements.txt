@@ -4,3 +4,7 @@ mypy
 
 pandas
 bokeh
+matplotlib
+numpy
+pandas_datareader
+jupyter
